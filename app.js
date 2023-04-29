@@ -27,22 +27,13 @@ const Player = (props) => {
 
 const Counter = () => {
   const [score, setScore] = React.useState(0);
-  // state = {
-  //   score: 0,
-  // };
 
   const incrementScore = () => {
     setScore(prevScore => prevScore + 1);
-    // this.setState((prevState) => ({
-    //   score: prevState.score + 1,
-    // }));
   };
 
   const decrementScore = () => {
     setScore(prevScore => prevScore - 1)
-    // this.setState((prevState) => ({
-    //   score: prevState.score - 1,
-    // }));
   };
 
   return (
@@ -69,11 +60,11 @@ const Counter = () => {
 const App = () => {
   const [players, setPlayers] = React.useState([
       {
-        name: 'Guil',
+        name: 'Beau',
         id: 1,
       },
       {
-        name: 'Treasure',
+        name: 'Vera',
         id: 2,
       },
       {
@@ -111,8 +102,3 @@ const App = () => {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
-
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('root')
-// );
